@@ -23,7 +23,7 @@ pipeline {
         }
         stage ('Run Container') {
             steps {
-                sh 'docker run -d -p 8761 discovery_service'
+                sh 'docker run -d -p 8761:8761 discovery_service'
             }
         }
 
